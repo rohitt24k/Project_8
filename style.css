@@ -1,0 +1,296 @@
+/* universal type */
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #0F0F10;
+    padding: 30px 200px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+h1{
+    font-size: 3rem;
+}
+h3{
+    font-size: 1rem;
+    font-weight: 400;
+}
+p{
+    font-weight: 200;
+    font-size: 0.8rem;
+}
+h4{
+    font-weight: 400;
+    font-size: 0.8rem; 
+}
+button{
+    background-color: #1E1E21;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border-width: 0;
+}
+
+
+/* specific */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul, nav div{
+    display: flex;
+    gap: 50px;
+}
+.onEar{
+    position: relative;
+}
+.headphoneImage{
+    z-index: -1;
+    width: 230px;
+    position: absolute; 
+    left: 8rem;
+    bottom: 16rem;
+}
+.onEar div{
+    width: 32rem;
+    margin-left: 28rem;
+    margin-top: 7rem;
+}
+.onEar div img{
+    display: block;
+    margin: auto;
+}
+.overviewText{
+    width: 22rem;
+    margin: 1rem 0;
+    line-height: 1.5rem;
+}
+
+.onEar ul{
+    display: flex;
+    margin-top: 8rem;
+    justify-content: center;
+    gap: 8rem;
+}
+.onEar ul li img{
+    width: 5rem;
+}
+header button, .onEar button, .case button, .discount button{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/*=======================
+=======  specs  ========= 
+=======================*/
+
+.specs{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 2rem;
+
+}
+.specLogo{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+}
+.specs ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.specs ul li img{
+    height: 1.2rem;
+}
+.bluetooth{
+    position: relative;
+    left: 15rem;
+}
+.battery{
+    position: relative;
+    left: 12rem;
+}
+.charger{
+    position: relative;
+    left: 12rem;
+}
+.mic{
+    position: relative;
+    left: 15rem;
+}
+.specImage{
+    width: 18rem;
+    
+    align-self: center;
+}
+
+/*=======================
+=======  case  ==========
+=======================*/
+
+.case{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 8rem;
+    gap: 4rem;
+}
+.caseLogo{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+}
+.caseImage{
+    justify-self: end;
+}
+.caseText{
+    align-self: center;
+}
+.caseText p{
+    width: 12rem;
+    line-height: 1.5rem;
+}
+
+
+/*=======================
+=======discount========== 
+=======================*/
+
+.discount{
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #181A1B;
+    border-radius: 0.8rem;
+    margin: 8rem 0;
+}
+.dicountText{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: baseline;
+}
+.dicountText h2{
+    width: 20rem;
+}
+.buyNow{
+    width: 22rem;
+}
+.discount button{
+    background-color: black;
+}
+
+/*============================
+=======chooseYourStyle======== 
+============================*/
+
+.chooseYourStyle{
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    gap: 5rem;
+    justify-content: center;
+}
+.chooseYourStyle h3{
+    font-size: 0.8rem;
+}
+.chooseYourStyle p{
+    font-size: 0.8rem;
+}
+.chooseYourStyleLogo{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self: center;
+}
+.product{
+    height: 150px;
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.productPhoto{
+    position: absolute;
+    width: 7rem;
+    bottom: 4rem;
+}
+.productText{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.shop{
+    background-color: black;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+/*=============================
+============Footer============= 
+=============================*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 8rem;
+    position: relative;
+    margin-bottom: 5rem;
+}
+footer h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+footer li{
+    font-size: 0.9rem;
+    font-weight: 200;
+    line-height: 1.8rem;
+}
+.social ul{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+.email{
+    background-color: #181A1B;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.5rem;
+}
+.email input{
+    background-color: transparent;
+    border-width: 0;
+    font-weight: 300;
+}
+.email input:focus{
+    outline: none;
+}
+.email button{
+    background-color: black;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.arrow{
+    position: absolute;
+    top: 0.3rem;
+    right: -10rem;
+}
